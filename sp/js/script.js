@@ -13,4 +13,10 @@ $(document).ready(function(){
 		}
 	});
 
+	//$("#main ul.accordion li .inner").hide();
+	$("#main ul.accordion h3").click(function(){
+		$(this).next().slideToggle();
+		$(this).toggleClass('active');
+	});
+
 });
